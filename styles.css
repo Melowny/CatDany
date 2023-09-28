@@ -3,7 +3,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #161616;
+    background: #333333;
 }
 body {
     height: 100%;
@@ -36,7 +36,7 @@ body {
     height: 10%;
     width: 5%;
     border-radius: 50%;
-    background: #161616;
+    background: #333333;
 }
 .ear::after {
     transform-origin: 50% 100%;
@@ -67,7 +67,7 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
-    background: #161616;
+    background: #333333;
     border-radius: 50%;
 }
 .eye {
@@ -86,7 +86,7 @@ body {
     height: 0;
     width: 100%;
     border-radius: 0 0 50% 50Array/0Array 0 40% 40%;
-    background: #161616;
+    background: #333333;
     animation: blink 4s infinite ease-in;
 }
 @keyframes blink {
@@ -198,6 +198,7 @@ body {
 .doc-link {
     font-style: normal;
     font-size: 32px;
-    color: #00ff00;
+    font-family: "Asap SemiBold";
+    color: #ffe200;
 }
 
