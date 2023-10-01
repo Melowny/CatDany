@@ -1,77 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style class="darkreader darkreader--text" media="screen"></style>
-    <style class="darkreader darkreader--invert" media="screen"></style>
-    <style class="darkreader darkreader--inline" media="screen">[data-darkreader-inline-bgcolor] {
-        background-color: var(--darkreader-inline-bgcolor) !important;
-    }
+    <!-- Add your stylesheets, meta tags, and other head content here -->
 
-    [data-darkreader-inline-bgimage] {
-        background-image: var(--darkreader-inline-bgimage) !important;
-    }
+    <style>
+        /* Your existing CSS styles go here */
+    </style>
 
-    [data-darkreader-inline-border] {
-        border-color: var(--darkreader-inline-border) !important;
-    }
-
-    [data-darkreader-inline-border-bottom] {
-        border-bottom-color: var(--darkreader-inline-border-bottom) !important;
-    }
-
-    [data-darkreader-inline-border-left] {
-        border-left-color: var(--darkreader-inline-border-left) !important;
-    }
-
-    [data-darkreader-inline-border-right] {
-        border-right-color: var(--darkreader-inline-border-right) !important;
-    }
-
-    [data-darkreader-inline-border-top] {
-        border-top-color: var(--darkreader-inline-border-top) !important;
-    }
-
-    [data-darkreader-inline-boxshadow] {
-        box-shadow: var(--darkreader-inline-boxshadow) !important;
-    }
-
-    [data-darkreader-inline-color] {
-        color: var(--darkreader-inline-color) !important;
-    }
-
-    [data-darkreader-inline-fill] {
-        fill: var(--darkreader-inline-fill) !important;
-    }
-
-    [data-darkreader-inline-stroke] {
-        stroke: var(--darkreader-inline-stroke) !important;
-    }
-
-    [data-darkreader-inline-outline] {
-        outline-color: var(--darkreader-inline-outline) !important;
-    }
-
-    [data-darkreader-inline-stopcolor] {
-        stop-color: var(--darkreader-inline-stopcolor) !important;
-    }</style>
-    <style class="darkreader darkreader--variables" media="screen">:root {
-        --darkreader-neutral-background: #212222;
-        --darkreader-neutral-text: #eae3d9;
-        --darkreader-selection-background: #165aaa;
-        --darkreader-selection-text: #fbf5ec;
-    }</style>
-    <style class="darkreader darkreader--root-vars" media="screen"></style>
-    <script>window["GUARDIO_SENSOR_CONF"] = {"click": true}</script>
-    <link rel="stylesheet" href="styles.css">
-    <meta charset="utf-8">
-    <link rel="icon" href="fav.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
-    <meta name="theme-color" content="#0d0d0d">
-    <meta name="description" content="Template API">
-    <link rel="apple-touch-icon" href="logo192.png">
-    <link rel="manifest" crossorigin="use-credentials" href="manifest.json">
-    <title>Template API</title>
-    <style class="darkreader darkreader--override" media="screen"></style>
+    <style>
+        /* Additional CSS for mouse-following pupils */
+        .eye-pupil {
+            position: absolute;
+            top: 25%;
+            height: 50%;
+            width: 20%;
+            background: #161616;
+            border-radius: 50%;
+            transition: transform 0.1s;
+        }
+    </style>
 </head>
 <body monica-locale="de" monica-version="2.7.0" monica-id="ofpnmcalabcbjgholdjcjblkibolbppb">
 <div class="wrapper">
@@ -84,7 +31,7 @@
                 <div class="eye eye--left burak" id="shadorak">
                     <div class="eye-pupil"></div>
                 </div>
-                <div class="eye eye--right burak"id="warcrime">
+                <div class="eye eye--right burak" id="warcrime">
                     <div class="eye-pupil"></div>
                 </div>
                 <div class="muzzle burak"></div>
@@ -102,40 +49,15 @@
 <div id="monica-content-root" class="monica-widget" data-darkreader-mode="dynamic" data-darkreader-scheme="dark">
     <meta name="darkreader" content="22e02358aedb4349b13144782479f695">
 </div>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- Add your stylesheets, meta tags, and other head content here -->
-
-    <style>
-        /* Your existing CSS styles go here */
-    </style>
-</head>
-<body monica-locale="de" monica-version="2.7.0" monica-id="ofpnmcalabcbjgholdjcjblkibolbppb">
-<div class="wrapper">
-    <div class="cat-wrapper">
-        <!-- Your existing HTML content goes here -->
-    </div>
-    <div class="info">
-        <!-- Your existing HTML content goes here -->
-    </div>
-</div>
-
-<div id="monica-content-root" class="monica-widget" data-darkreader-mode="dynamic" data-darkreader-scheme="dark">
-    <meta name="darkreader" content="22e02358aedb4349b13144782479f695">
-</div>
 
 <script>
-    // Get references to the eye pupils and eyes
-    const leftEyePupil = document.querySelector('.eye--left .eye-pupil');
-    const rightEyePupil = document.querySelector('.eye--right .eye-pupil');
-    const leftEye = document.querySelector('.eye--left');
-    const rightEye = document.querySelector('.eye--right');
-
     // Function to update the position of the pupils based on the cursor
     function updateEyePosition(event) {
+        const leftEye = document.querySelector('.eye--left');
+        const rightEye = document.querySelector('.eye--right');
+        const leftEyePupil = document.querySelector('.eye--left .eye-pupil');
+        const rightEyePupil = document.querySelector('.eye--right .eye-pupil');
+
         const eyeSize = leftEye.getBoundingClientRect();
         const eyeCenterX = eyeSize.left + eyeSize.width / 2;
         const eyeCenterY = eyeSize.top + eyeSize.height / 2;
