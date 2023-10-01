@@ -5,23 +5,30 @@ html {
     justify-content: center;
     background: #333333;
 }
+
 body {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.wrapper { width: 360px; }
+
+.wrapper {
+    width: 360px;
+}
+
 .cat-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .cat {
     position: relative;
     height: 220px;
     width: 248.6px;
 }
+
 .ear {
     position: absolute;
     top: -30%;
@@ -29,6 +36,7 @@ body {
     width: 25%;
     background: #fff;
 }
+
 .ear::before, .ear::after {
     content: '';
     position: absolute;
@@ -38,31 +46,39 @@ body {
     border-radius: 50%;
     background: #333333;
 }
+
 .ear::after {
     transform-origin: 50% 100%;
 }
+
 .ear--left {
     left: -7%;
     border-radius: 70% 30% 0% 0% / 100% 100% 0% 0%;
     transform: rotate(-15deg);
 }
+
 .ear--left::before, .ear--left::after {
     right: 10%;
 }
+
 .ear--left::after {
     transform: rotate(-45deg);
 }
+
 .ear--right {
     right: -7%;
     border-radius: 30% 70% 0% 0% / 100% 100% 0% 0%;
     transform: rotate(15deg);
 }
+
 .ear--right::before, .ear--right::after {
     left: 10%;
 }
+
 .ear--right::after {
     transform: rotate(45deg);
 }
+
 .face {
     position: absolute;
     height: 100%;
@@ -70,6 +86,7 @@ body {
     background: #333333;
     border-radius: 50%;
 }
+
 .eye {
     position: absolute;
     top: 35%;
@@ -77,7 +94,31 @@ body {
     width: 31%;
     background: #fff;
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    animation: colorswap 4s infinite ease-in;
 }
+
+@keyframes colorswap {
+    0% {
+        background-color: white;
+    }
+    90% {
+        background-color: white;
+    }
+    92.5% {
+        background-color: red;
+    }
+    95% {
+        background-color: red;
+    }
+    97.5% {
+        background-color: purple;
+    }
+    100% {
+        background-color: purple;
+    }
+
+}
+
 .eye::after {
     content: '';
     position: absolute;
@@ -89,6 +130,7 @@ body {
     background: #333333;
     animation: blink 4s infinite ease-in;
 }
+
 @keyframes blink {
     0% {
         height: 0;
@@ -109,6 +151,7 @@ body {
         height: 0;
     }
 }
+
 .eye::before {
     content: '';
     position: absolute;
@@ -118,18 +161,23 @@ body {
     background: #fff;
     border-radius: 50%;
 }
+
 .eye--left {
     left: 0;
 }
+
 .eye--left::before {
     right: -5%;
 }
+
 .eye--right {
     right: 0;
 }
+
 .eye--right::before {
     left: -5%;
 }
+
 .eye-pupil {
     position: absolute;
     top: 25%;
@@ -138,7 +186,9 @@ body {
     background: #161616;
     border-radius: 50%;
     animation: look-around 4s infinite;
+
 }
+
 @keyframes look-around {
     0% {
         transform: translate(0);
@@ -162,12 +212,15 @@ body {
         transform: translate(0, 0);
     }
 }
+
 .eye--left .eye-pupil {
     right: 30%;
 }
+
 .eye--right .eye-pupil {
     left: 30%;
 }
+
 .eye-pupil::after {
     content: '';
     position: absolute;
@@ -178,6 +231,7 @@ body {
     border-radius: 50%;
     background: #fff;
 }
+
 .muzzle {
     position: absolute;
     top: 60%;
@@ -188,6 +242,7 @@ body {
     transform: translateX(-50%);
     border-radius: 50% 50% 50% 50% / 30% 30% 70% 70%;
 }
+
 .info {
     width: 360px;
     text-align: center;
@@ -195,10 +250,10 @@ body {
     color: #fff;
     font-size: 18px;
 }
+
 .doc-link {
     font-style: normal;
     font-size: 32px;
     font-family: "Asap SemiBold";
     color: #ffe200;
 }
-
