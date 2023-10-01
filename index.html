@@ -80,7 +80,7 @@
             <div class="ear ear--left"></div>
             <div class="ear ear--right"></div>
             <div class="face">
-                
+
                 <div class="eye eye--left burak" id="shadorak">
                     <div class="eye-pupil"></div>
                 </div>
@@ -102,5 +102,59 @@
 <div id="monica-content-root" class="monica-widget" data-darkreader-mode="dynamic" data-darkreader-scheme="dark">
     <meta name="darkreader" content="22e02358aedb4349b13144782479f695">
 </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Add your stylesheets, meta tags, and other head content here -->
+
+    <style>
+        /* Your existing CSS styles go here */
+    </style>
+</head>
+<body monica-locale="de" monica-version="2.7.0" monica-id="ofpnmcalabcbjgholdjcjblkibolbppb">
+<div class="wrapper">
+    <div class="cat-wrapper">
+        <!-- Your existing HTML content goes here -->
+    </div>
+    <div class="info">
+        <!-- Your existing HTML content goes here -->
+    </div>
+</div>
+
+<div id="monica-content-root" class="monica-widget" data-darkreader-mode="dynamic" data-darkreader-scheme="dark">
+    <meta name="darkreader" content="22e02358aedb4349b13144782479f695">
+</div>
+
+<script>
+    // Get references to the eye pupils and eyes
+    const leftEyePupil = document.querySelector('.eye--left .eye-pupil');
+    const rightEyePupil = document.querySelector('.eye--right .eye-pupil');
+    const leftEye = document.querySelector('.eye--left');
+    const rightEye = document.querySelector('.eye--right');
+
+    // Function to update the position of the pupils based on the cursor
+    function updateEyePosition(event) {
+        const eyeSize = leftEye.getBoundingClientRect();
+        const eyeCenterX = eyeSize.left + eyeSize.width / 2;
+        const eyeCenterY = eyeSize.top + eyeSize.height / 2;
+
+        const angleRad = Math.atan2(event.clientY - eyeCenterY, event.clientX - eyeCenterX);
+        const angleDeg = (angleRad * 180) / Math.PI;
+
+        // Limit the eye movement to a certain range
+        const maxAngle = 30;
+        const eyeDistance = 15; // Adjust this value as needed
+        const xOffset = Math.min(Math.max(-maxAngle, angleDeg), maxAngle);
+
+        leftEyePupil.style.transform = `translateX(${xOffset - eyeDistance}px)`;
+        rightEyePupil.style.transform = `translateX(${xOffset + eyeDistance}px)`;
+    }
+
+    // Add a mousemove event listener to the document
+    document.addEventListener('mousemove', updateEyePosition);
+</script>
+
 </body>
 </html>
