@@ -102,19 +102,19 @@ body {
         background-color: white;
     }
     90% {
-        background-color: mediumpurple;
+        background-color: #ab90e1;
     }
     92.5% {
-        background-color: #ffe200;
+        background-color: #8f7fd3;
     }
     95% {
-        background-color: #165aaa;
+        background-color: #503fc2;
     }
     97.5% {
-        background-color: aqua;
+        background-color: #321193;
     }
     100% {
-        background-color: aquamarine;
+        background-color: #220356;
     }
 
 }
@@ -293,13 +293,13 @@ body {
 }
 
 .front {
-    background: url(https://opengameart.org/sites/default/files/UNO-Back_1.png) no-repeat center;
+    background: url(imgs/UNOkarte.png) no-repeat center;
     background-size: cover;
 }
 
 .back {
     background-color: #333333;
-    background: url(https://d33wubrfki0l68.cloudfront.net/45c079b…/a481d/images/unoreverse/classic_uno_reverse_card.jpg) no-repeat;
+    background: url(imgs/back_reverse.jpg) no-repeat;
     background-size: cover;
     transform: rotateY(180deg);
     display: flex;
