@@ -271,8 +271,8 @@ body {
     font-family: Helvetica, sans-serif;
     color: rgb(211, 211, 211);
     display: flex;
-    justify-content:baseline;
-    align-items: bottom;
+    justify-content: right;
+    align-items: baseline;
 }
 .container {
     width: 350px;
