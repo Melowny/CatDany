@@ -275,9 +275,9 @@ body {
     align-items: baseline;
 }
 .container {
-    width: 350px;
-    height: 500px;
-    perspective: 800px;
+    width: 150px;
+    height: 300px;
+    perspective: 500px;
     /* Initially hide the code */
     .container .card .back {
         display: none;
@@ -313,7 +313,7 @@ body {
 }
 
 .front {
-    background-image: url(https://source.unsplash.com/random/350x500);
+    background-image: url(https://source.unsplash.com/random/150x300);
 }
 
 .back {
