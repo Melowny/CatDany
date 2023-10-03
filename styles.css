@@ -322,7 +322,7 @@ body {
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     gap: 5rem;
 }
