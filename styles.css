@@ -314,7 +314,6 @@ body {
 
 .front {
     background-image: url(https://opengameart.org/sites/default/files/UNO-Back_1.png);
-    background-size: auto;
 }
 
 .back {
@@ -322,7 +321,7 @@ body {
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
     gap: 5rem;
 }
