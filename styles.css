@@ -297,7 +297,7 @@ body {
 .card {
     height: 100%;
     width: 100%;
-    position: right,bottom;
+    position: center;
     transition: transform 1500ms;
     transform-style: preserve-3d;
 }
