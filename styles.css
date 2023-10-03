@@ -102,19 +102,19 @@ body {
         background-color: white;
     }
     90% {
-        background-image:url("https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcSBqxJv1osog1W7-FqQNypdy3dN3Rs10MU-gVmNnL6veDUh7GW4-a-NKjQhbrR9uGij");
+        background-image:url("https://www.astronomy.com/wp-content/uploads/sites/2/2023/03/Starsinthesky.jpg?fit=600%2C384");
     }
     92.5% {
-        background-image:url("https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcSBqxJv1osog1W7-FqQNypdy3dN3Rs10MU-gVmNnL6veDUh7GW4-a-NKjQhbrR9uGij");;
+        background-image:url("https://www.astronomy.com/wp-content/uploads/sites/2/2023/03/Starsinthesky.jpg?fit=600%2C384");
     }
     95% {
-        background-image:url("https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcSBqxJv1osog1W7-FqQNypdy3dN3Rs10MU-gVmNnL6veDUh7GW4-a-NKjQhbrR9uGij");
+        background-image:url("https://www.astronomy.com/wp-content/uploads/sites/2/2023/03/Starsinthesky.jpg?fit=600%2C384");
     }
     97.5% {
-        background-image:url("https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcSBqxJv1osog1W7-FqQNypdy3dN3Rs10MU-gVmNnL6veDUh7GW4-a-NKjQhbrR9uGij");
+        background-image:url("https://www.astronomy.com/wp-content/uploads/sites/2/2023/03/Starsinthesky.jpg?fit=600%2C384");
     }
     100% {
-        background-image:url("https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcSBqxJv1osog1W7-FqQNypdy3dN3Rs10MU-gVmNnL6veDUh7GW4-a-NKjQhbrR9uGij");
+        background-image:url("https://www.astronomy.com/wp-content/uploads/sites/2/2023/03/Starsinthesky.jpg?fit=600%2C384");
     }
 
 }
@@ -312,7 +312,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 5rem;
-    background-image: url('https://d33wubrfki0l68.cloudfront.net/45c079bb7666366fc23d83c9d883ccc367fc9f71/a481d/images/unoreverse/classic_uno_reverse_card.jpg');
+    background-image: url('https://www.astronomy.com/wp-content/uploads/sites/2/2023/03/Starsinthesky.jpg?fit=600%2C384');
     /* Rest of your styles... */
 }
 
