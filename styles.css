@@ -268,7 +268,7 @@ body {
 body {
     height: 100vh;
     overflow: hidden;
-    font-family: Helvetica, sans-serif;
+    font-family: "Asap SemiBold";
     color: rgb(211, 211, 211);
     display: flex;
     justify-content: right;
@@ -313,11 +313,11 @@ body {
 }
 
 .front {
-    background-image: url(https://ecdn.teacherspayteachers.com/thumbitem/Telehealth-Bundle-HeadBanz-Hi-Ho-Cherry-O-Uno-Guess-Who-and-Sorry-6491834-1655235429/original-6491834-1.jpg/150x300);
+    background-color: #333333;
 }
 
 .back {
-    background-color: #3a3a3a;
+    background-color: #333333;
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
