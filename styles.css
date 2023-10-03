@@ -70,29 +70,51 @@ body {
     background: #c42335;
     transform: rotate(30deg);
     border-radius: 260px / 400px;
-}
 
-.container::before {
-    content: "8";
-    position: absolute;
-    font-family: helvetica;
-    position: relative;
-    font-size: 4em;
-    left: -40%;
-    color: #fefefe;
-    text-shadow: 2px 2px #232323;
 }
 
 .container::after {
-    content: "8";
-    position: absolute;
-    font-family: helvetica;
-    position: relative;
-    font-size: 4em;
-    top: -410px;
-    left: 40%;
-    color: #fefefe;
-    text-shadow: 2px 2px #232323;
+    .reverse(@size, @color) {
+    .reverse {
+        height: @size;
+        margin-top: -60%;
+        margin-left: 100%;
+        .arrows {
+            display: inline-block;
+            transform: rotate(-45deg);
+            .arrow {
+                width: @size/4;
+                height: @size/4;
+                background-color: @color;
+                position: relative;
+                &:before {
+                    content: '';
+                    display: block;
+                    width: @size/4;
+                    height: @size/4;
+                    background-color: inherit;
+                    border-top-left-radius: 100%;
+                    position: absolute;
+                    left: -@size/4+1;
+                }
+                &:after {
+                    content: '';
+                    display: block;
+                    width: 0px;
+                    height: 0px;
+                    border: @size/4 solid @color;
+                    border-top-color: transparent;
+                    border-bottom-color: transparent;
+                    border-right: none;
+                    position: absolute;
+                    right: -@size/4+1;
+                    top: -@size/8;
+                }
+                &:last-child {
+                    transform: rotate(180deg);
+                    top: @size/20;
+                    right: @size/3;
+                }
 }
 
 /* ... Rest of the code you found ... */
