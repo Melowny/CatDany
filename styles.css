@@ -257,23 +257,6 @@ body {
     font-family: "Asap SemiBold";
     color: #ffe200;
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    height: 100vh;
-    overflow: hidden;
-    background: linear-gradient(45deg, #061de3, #e306ca);
-    font-family: Helvetica, sans-serif;
-    color: rgb(211, 211, 211);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .container {
     width: 350px;
     height: 500px;
@@ -308,7 +291,7 @@ body {
 }
 
 .back {
-    background-color: #3a3a3a;
+    background-color: #333333;
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
