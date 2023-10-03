@@ -257,6 +257,8 @@ body {
     font-family: "Asap SemiBold";
     color: #ffe200;
 }
+
+
 * {
     margin: 0;
     padding: 0;
@@ -272,7 +274,6 @@ body {
     justify-content:bottom;
     align-items: bottom;
 }
-
 .container {
     width: 350px;
     height: 500px;
