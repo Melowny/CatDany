@@ -102,19 +102,19 @@ body {
         background-color: white;
     }
     90% {
-        background-image:url("https://www.astronomy.com/wp-content/uploads/sites/2/2023/03/Starsinthesky.jpg?fit=600%2C384");
+        background-color: mediumpurple;
     }
     92.5% {
-        background-image:url("https://www.astronomy.com/wp-content/uploads/sites/2/2023/03/Starsinthesky.jpg?fit=600%2C384");
+        background-color: #ffe200;
     }
     95% {
-        background-image:url("https://www.astronomy.com/wp-content/uploads/sites/2/2023/03/Starsinthesky.jpg?fit=600%2C384");
+        background-color: #165aaa;
     }
     97.5% {
-        background-image:url("https://www.astronomy.com/wp-content/uploads/sites/2/2023/03/Starsinthesky.jpg?fit=600%2C384");
+        background-color: aqua;
     }
     100% {
-        background-image:url("https://www.astronomy.com/wp-content/uploads/sites/2/2023/03/Starsinthesky.jpg?fit=600%2C384");
+        background-color: aquamarine;
     }
 
 }
