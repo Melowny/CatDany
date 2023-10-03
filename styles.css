@@ -303,31 +303,28 @@ body {
 }
 
 .front,
-    {background-color: #333333}
+.back {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front {
+    background-image: url(https://opengameart.org/sites/default/files/UNO-Back_1.png);
+}
 
 .back {
+    background-color: #333333;
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 5rem;
-    background-image: url('https://static.wikia.nocookie.net/matteluno/images/8/8f/Ddmcdqs-ecd2b865-fa25-4550-adf0-f5962af5484f.png/revision/latest?cb=20230111041235');
-    background-size:auto;
 }
-
-.card {
-    height: 100%;
-    width: 100%;
-    position: relative; /* Corrected positioning value */
-    transition: transform 1500ms;
-    transform-style: preserve-3d;
-    right: 0; /* Added right property */
-    bottom: 0; /* Added bottom property */
-}
-
-/* ... Rest of your CSS ... */
-
 
 
     @green: #3E9E32;
