@@ -271,8 +271,8 @@ body {
     font-family: "Asap SemiBold";
     color: rgb(211, 211, 211);
     display: flex;
-    justify-content: right;
-    align-items: baseline;
+    justify-content: center;
+    align-items: center;
 }
 .container {
     width: 150px;
@@ -321,8 +321,8 @@ body {
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
-    justify-content: right;
-    align-items: baseline;
+    justify-content: center;
+    align-items: center;
     gap: 5rem;
 
 
