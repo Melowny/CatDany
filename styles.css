@@ -278,6 +278,15 @@ body {
     width: 350px;
     height: 500px;
     perspective: 800px;
+    /* Initially hide the code */
+    .container .card .back {
+        display: none;
+    }
+
+    /* Show the code on hover */
+    .container .card:hover .back {
+        display: block;
+    }
 }
 
 .container:hover > .card {
@@ -315,3 +324,6 @@ body {
     justify-content: center;
     align-items: center;
     gap: 5rem;
+
+
+
