@@ -303,16 +303,7 @@ body {
 }
 
 .front,
-.back {
-    height: 100%;
-    width: 100%;
-    border-radius: 2rem;
-    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
-    position: absolute;
-    backface-visibility: hidden;
-    p.solid {border-style: solid;}
-    background-image: url(;https://d33wubrfki0l68.cloudfront.net/45c079bb7666366fc23d83c9d883ccc367fc9f71/a481d/images/unoreverse/classic_uno_reverse_card.jpg)
-}
+    /* ... Your previous CSS rules ... */
 
 .back {
     transform: rotateY(180deg);
@@ -321,6 +312,22 @@ body {
     justify-content: center;
     align-items: center;
     gap: 5rem;
+    background-image: url('https://d33wubrfki0l68.cloudfront.net/45c079bb7666366fc23d83c9d883ccc367fc9f71/a481d/images/unoreverse/classic_uno_reverse_card.jpg');
+    /* Rest of your styles... */
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+    position: relative; /* Corrected positioning value */
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+    right: 0; /* Added right property */
+    bottom: 0; /* Added bottom property */
+}
+
+/* ... Rest of your CSS ... */
+
 
 
     @green: #3E9E32;
