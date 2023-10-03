@@ -168,6 +168,7 @@ body {
 
 .eye--left::before {
     right: -5%;
+    animation: colorswap 4s infinite ease-in;
 }
 
 .eye--right {
@@ -176,6 +177,7 @@ body {
 
 .eye--right::before {
     left: -5%;
+    animation: colorswap 4s infinite ease-in;
 }
 
 .eye-pupil {
@@ -258,9 +260,13 @@ body {
     color: #ffe200;
 }
 .container {
-    width: 350px;
-    height: 500px;
+    width: 175px;
+    height: 270px;
     perspective: 800px;
+    position: absolute;
+    float: right;
+    bottom: 75px;
+    right: 91px;
 }
 
 .container:hover > .card {
@@ -287,12 +293,14 @@ body {
 }
 
 .front {
-    background-image: url(https://opengameart.org/sites/default/files/UNO-Back_1.png);
+    background: url(https://opengameart.org/sites/default/files/UNO-Back_1.png) no-repeat center;
+    background-size: cover;
 }
 
 .back {
     background-color: #333333;
-    background-image: url("https://d33wubrfki0l68.cloudfront.net/45c079bb7666366fc23d83c9d883ccc367fc9f71/a481d/images/unoreverse/classic_uno_reverse_card.jpg");
+    background: url(https://d33wubrfki0l68.cloudfront.net/45c079b…/a481d/images/unoreverse/classic_uno_reverse_card.jpg) no-repeat;
+    background-size: cover;
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
