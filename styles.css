@@ -310,10 +310,7 @@ body {
     box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
     position: absolute;
     backface-visibility: hidden;
-}
-
-.front {
-    background-color: #333333;
+    background-image: url(;https://d33wubrfki0l68.cloudfront.net/45c079bb7666366fc23d83c9d883ccc367fc9f71/a481d/images/unoreverse/classic_uno_reverse_card.jpg)
 }
 
 .back {
