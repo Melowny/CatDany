@@ -321,8 +321,8 @@ body {
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: right;
+    align-items: baseline;
     gap: 5rem;
 
 
