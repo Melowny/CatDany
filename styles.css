@@ -257,8 +257,6 @@ body {
     font-family: "Asap SemiBold";
     color: #ffe200;
 }
-
-
 * {
     margin: 0;
     padding: 0;
@@ -268,25 +266,18 @@ body {
 body {
     height: 100vh;
     overflow: hidden;
-    font-family: "Asap SemiBold";
+    background: linear-gradient(45deg, #061de3, #e306ca);
+    font-family: Helvetica, sans-serif;
     color: rgb(211, 211, 211);
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.container {
-    width: 100%;
-    height: 100%;
-    perspective: 500px;
-    /* Initially hide the code */
-    .container .card .back {
-        display: none;
-    }
 
-    /* Show the code on hover */
-    .container .card:hover .back {
-        display: block;
-    }
+.container {
+    width: 350px;
+    height: 500px;
+    perspective: 800px;
 }
 
 .container:hover > .card {
@@ -297,7 +288,7 @@ body {
 .card {
     height: 100%;
     width: 100%;
-    position: center;
+    position: relative;
     transition: transform 1500ms;
     transform-style: preserve-3d;
 }
@@ -312,14 +303,12 @@ body {
     backface-visibility: hidden;
 }
 
-.card .front img{
-    max-height:400px;
-    max-width: 200px;
-
+.front {
+    background-image: url(https://opengameart.org/sites/default/files/UNO-Back_1.png);
 }
 
 .back {
-    background-color: #333333;
+    background-color: #3a3a3a;
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
