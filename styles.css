@@ -303,7 +303,7 @@ body {
 }
 
 .front,
-    /* ... Your previous CSS rules ... */
+    {background-color: #333333}
 
 .back {
     transform: rotateY(180deg);
