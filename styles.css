@@ -111,10 +111,10 @@ body {
         background-color: mediumpurple;
     }
     97.5% {
-        background-color: mediumpurple;
+        background-color: rebeccapurple;
     }
     100% {
-        background-color: mediumpurple;
+        background-color: purple;
     }
 
 }
@@ -271,7 +271,7 @@ body {
     font-family: Helvetica, sans-serif;
     color: rgb(211, 211, 211);
     display: flex;
-    justify-content:bottom;
+    justify-content:baseline;
     align-items: bottom;
 }
 .container {
