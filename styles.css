@@ -312,8 +312,8 @@ body {
     justify-content: center;
     align-items: center;
     gap: 5rem;
-    background-image: url('https://www.astronomy.com/wp-content/uploads/sites/2/2023/03/Starsinthesky.jpg?fit=600%2C384');
-    /* Rest of your styles... */
+    background-image: url('https://static.wikia.nocookie.net/matteluno/images/8/8f/Ddmcdqs-ecd2b865-fa25-4550-adf0-f5962af5484f.png/revision/latest?cb=20230111041235');
+    background-size:auto;
 }
 
 .card {
